@@ -21,5 +21,5 @@ They will install the basic utilities I regularly use, such as:
 
 ### MacOS
 ```sh
-/bin/bash -c "${curl -fsSL }https://raw.githubusercontent.com/benpueschel/dotfiles/main/setup-macos.sh}"
+/bin/bash -c "${curl -fsSL https://raw.githubusercontent.com/benpueschel/dotfiles/main/setup-macos.sh}"
 ```
