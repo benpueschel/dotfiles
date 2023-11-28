@@ -8,6 +8,7 @@ brew install docker
 brew install colima
 brew install tmux
 brew install neovim
+brew install ripgrep
 
 # install packer.nvim
 git clone --depth 1 https://github.com/wbthomason/packer.nvim \
