@@ -63,3 +63,8 @@ echo \
 sudo apt update -y
 
 sudo apt install -y docker-ce docker-ce-cli containerd.io
+
+# add current use to docker usergroup
+sudo usermod -aG docker ${USER}
+# apply usermod by relogging
+su - ${USER}
