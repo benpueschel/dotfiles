@@ -32,7 +32,7 @@ sh copy-dotfiles.sh
 
 # install neovim from github
 curl -L "https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz" -o "nvim.tar.gz" && \
-tar -x nvim.tar.gz -C /usr/local/ && \
+tar -xf nvim.tar.gz -C /usr/local/ && \
 rm nvim.tar.gz
 
 # install packer.nvim
