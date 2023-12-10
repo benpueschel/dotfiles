@@ -35,10 +35,6 @@ curl -L "https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.
 tar -xf nvim.tar.gz -C /usr/local/ && \
 rm nvim.tar.gz
 
-# install packer.nvim
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim 
-
 # add nvim installation to .zshrc $PATH
 echo -n 'export PATH=$PATH:/usr/local/nvim-linux64/bin' >> ~/.zshrc 
 
