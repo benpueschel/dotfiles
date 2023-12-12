@@ -3,3 +3,5 @@
 [user]
 	email = ben.pueschel2004@gmail.com
 	name = Ben Püschel
+[pull]
+	rebase = true
