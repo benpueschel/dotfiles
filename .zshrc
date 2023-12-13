@@ -102,4 +102,4 @@ export ARCHFLAGS="-arch x86_64"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:~/.local/scripts"
+export PATH="$PATH:$HOME/.local/scripts"
