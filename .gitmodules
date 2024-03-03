@@ -4,3 +4,6 @@
 [submodule ".local/scripts"]
 	path = .local/scripts
 	url = https://github.com/benpueschel/scripts
+[submodule ".config/zsh/plugins/zsh-autosuggestions"]
+	path = .config/zsh/plugins/zsh-autosuggestions
+	url = git@github.com:zsh-users/zsh-autosuggestions
