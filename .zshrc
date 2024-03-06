@@ -1,8 +1,5 @@
 export ZSH_TMUX_AUTOSTART="true"
 
-# git status in prompt
-# autoload -Uz vcs_info
-
 # complete sudo commands
 # WARNING: This will let Zsh completion scripts run commands with sudo 
 # privileges. You should not enable this if you use untrusted autocompletion 
@@ -38,6 +35,8 @@ autoload -Uz compinit && compinit
 # plugins=(copyfile copybuffer dirhistory zsh-autosuggestions tmux)
 
 alias ls='ls --color=auto'
+
+alias -g ...='../..'
 
 # Preferred editor for local and remote sessions
 export EDITOR='nvim'
