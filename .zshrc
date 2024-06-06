@@ -1,8 +1,8 @@
 export ZSH_TMUX_AUTOSTART="true"
 
 # complete sudo commands
-# WARNING: This will let Zsh completion scripts run commands with sudo 
-# privileges. You should not enable this if you use untrusted autocompletion 
+# WARNING: This will let Zsh completion scripts run commands with sudo
+# privileges. You should not enable this if you use untrusted autocompletion
 # scripts.
 zstyle ':completion::complete:*' gain-privileges 1
 
@@ -20,7 +20,14 @@ fpath=($HOME/.config/zsh/themes/util.zsh $fpath)
 source "$HOME/.config/zsh/themes/af-magic.zsh-theme"
 
 # include our plugins, all of which are in "~/.config/zsh/plugins"
-plugins=(sudo zsh-autosuggestions)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting
+	zsh-completions zsh-vi-mode)
+
+# configure zsh-vi-mode
+function zvm_config() {
+	ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
+	ZVM_INIT_MODE=sourcing
+}
 
 # source all of our plugins and add them to the fpath
 for plugin ($plugins); do
@@ -32,9 +39,23 @@ done
 # command completion
 autoload -Uz compinit && compinit
 
+# vi mode
+bindkey -v
+
+bindkey '^p' history-beginning-search-backward
+bindkey '^n' history-beginning-search-forward
+bindkey '^y' autosuggest-execute
+
+# history
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_ignore_dups
+setopt hist_save_no_dups
+setopt hist_find_no_dups
+
 # plugins=(copyfile copybuffer dirhistory zsh-autosuggestions tmux)
 
-alias ls='ls --color=auto'
+alias ls='ls -a --color=auto'
 
 alias -g ...='../..'
 
