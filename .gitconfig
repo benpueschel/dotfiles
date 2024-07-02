@@ -5,3 +5,5 @@
 	name = Ben Püschel
 [pull]
 	rebase = true
+[credential]
+	helper = cache --timeout=86400 # 1 day
