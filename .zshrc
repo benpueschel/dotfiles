@@ -65,4 +65,4 @@ export EDITOR='nvim'
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-export PATH="$PATH:$HOME/.local/scripts"
+export PATH="$PATH:$HOME/.local/scripts:$HOME/.cargo/bin"
