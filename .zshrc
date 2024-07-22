@@ -50,6 +50,7 @@ bindkey '^y' autosuggest-execute
 
 # history
 HISTSIZE=10000
+SAVEHIST=10000
 HISTFILE=~/.zsh_history
 HISTDUP=erase
 setopt appendhistory
