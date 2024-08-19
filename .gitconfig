@@ -7,3 +7,5 @@
 	rebase = true
 [credential]
 	helper = cache --timeout=86400 # 1 day
+[rerere]
+	enabled = true
