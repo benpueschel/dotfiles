@@ -95,16 +95,16 @@ git clone https://github.com/benpueschel/dotfiles.git && cd dotfiles
 
 Now, you can use GNU Stow to symlink the dotfiles you want to use:
 ```sh
-stow .
+stow -S alacritty git hyprland nvim scripts ssh tmux zsh
 ```
 This will symlink all dotfiles to the parent directory (which is `$HOME`
 because we cloned the repo into `$HOME/dotfiles`).
 
 If you want to put the dotfiles in a different directory, you can use stow like this:
 ```sh
-stow -t $HOME .
+stow -S alacritty git hyprland nvim scripts ssh tmux zsh -t $HOME
 ```
-The `-t` flag specifies the target directory, which *must* always be `$HOME`.
+The `-t` flag specifies the target directory, which ***must*** always be `$HOME`.
 
 Now you can change your default shell to zsh and restart your shell:
 ```sh
