@@ -1,18 +1,6 @@
-[submodule ".config/nvim"]
-	path = .config/nvim
-	url = https://github.com/benpueschel/nvim-config
-[submodule ".local/scripts"]
-	path = .local/scripts
-	url = https://github.com/benpueschel/scripts
-[submodule ".config/zsh/plugins/zsh-autosuggestions"]
-	path = .config/zsh/plugins/zsh-autosuggestions
-	url = git@github.com:zsh-users/zsh-autosuggestions
-[submodule ".config/zsh/plugins/zsh-syntax-highlighting"]
-	path = .config/zsh/plugins/zsh-syntax-highlighting
-	url = git@github.com:zsh-users/zsh-syntax-highlighting
-[submodule ".config/zsh/plugins/zsh-completions"]
-	path = .config/zsh/plugins/zsh-completions
-	url = git@github.com:zsh-users/zsh-completions
-[submodule ".config/zsh/plugins/zsh-vi-mode"]
-	path = .config/zsh/plugins/zsh-vi-mode
-	url = git@github.com:jeffreytse/zsh-vi-mode
+[submodule "nvim"]
+	path = nvim/.config/nvim
+	url = git@github.com:benpueschel/nvim-config
+[submodule "scripts"]
+	path = scripts/.local/scripts
+	url = git@github.com:benpueschel/scripts
