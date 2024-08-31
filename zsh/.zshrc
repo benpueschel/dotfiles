@@ -31,6 +31,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light jeffreytse/zsh-vi-mode
+zinit snippet OMZP::colored-man-pages
 
 # Load completions
 autoload -U compinit && compinit

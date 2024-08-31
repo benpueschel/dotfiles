@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "custom/media"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "cpu", "memory", "temperature", "clock"],
+    "modules-right": ["tray", "pulseaudio", "cpu", "memory", "temperature", "clock"],
     // Modules configuration
 	"hyprland/window": {
 		"icon": true
@@ -28,6 +28,10 @@
              "default": ""
          }
     },
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -41,10 +45,8 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon}  {volume}% - {format_source}",
-        "format-muted": "    - {format_source}",
-        "format-source": "{volume}%  ",
-        "format-source-muted": "  ",
+        "format": "{icon}  {volume}%",
+        "format-muted": " ",
         "format-icons": {
             "headphone": " ",
             "phone": " ",
@@ -59,8 +61,8 @@
         "return-type": "json",
         "max-length": 40,
         "format-icons": {
-            "spotify": "",
-            "default": "🎜"
+            "spotify": " ",
+            "default": "🎜 "
         },
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
