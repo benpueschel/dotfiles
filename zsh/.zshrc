@@ -80,7 +80,7 @@ export EDITOR='nvim'
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-export PATH="$PATH:$HOME/.local/scripts:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.local/scripts:$HOME/.local/bin:$HOME/.cargo/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
