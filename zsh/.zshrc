@@ -34,6 +34,7 @@ zinit light jeffreytse/zsh-vi-mode
 zinit snippet OMZP::colored-man-pages
 
 # Load completions
+fpath=("$HOME/.zsh_complete" $fpath)
 autoload -U compinit && compinit
 
 # complete sudo commands
