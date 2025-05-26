@@ -77,9 +77,6 @@ alias ls='ls -A --color=auto'
 # The superior text editor
 export EDITOR='nvim'
 
-# Compilation flags
-export ARCHFLAGS="-arch x86_64"
-
 export PATH="$PATH:$HOME/.local/scripts:$HOME/.local/bin:$HOME/.cargo/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
